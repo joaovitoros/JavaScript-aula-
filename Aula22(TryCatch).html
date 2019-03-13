@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+
+        <script>
+
+            var num;//moximo 10
+        
+            try {
+                num=prompt("Digite um valor");
+                if(num>10){
+                    throw new Error("Valor invalido");
+                }
+                document.write("Valor: " +num);
+            } catch (error) {
+                document.write("ERRO: "+error.message);
+                //console.log("Memsagem de erro: "+error.message);
+            }finally{
+                document.write("<br>Fim do tratamento");
+            }
+        
+        
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

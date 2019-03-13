@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+
+        <script>
+        
+            var nota = 65;
+            var res;
+
+            if(nota>=60){
+                if(nota>=90){
+                    res="Aprovado com louvor";
+                }else{
+                    res="Aprovado";
+                }
+            }else if(nota>=40){
+                res="Recuperação";
+            }else{
+                if(nota>=20){
+                    res="Reprovado";
+                }
+                else{
+                    res="Reprovado com louvor";
+                }
+            }
+
+            document.write(res);
+        
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+
+        <script>
+        
+            //metodos
+            var valor=59;
+
+            //var mt=Math.abs(valor);valor absoluto
+            //var mt=Math.ceil(valor);aredondamento (floor,round)
+            //var mt=Math.pow(valor,2);elevar
+            //var mt=Math.sqrt(valor);raiz do numero
+            var mt=Math.round(Math.random()*valor+1);
+
+            //angulos
+            var angulo=90;
+
+            var c=Math.cos(angulo*Math.PI/180);//conversao de angulo
+            var s=Math.sin(angulo*Math.PI/180);
+            
+            document.write("Angulo: "+angulo +"<br>Cosseno: " +c +"<br>Seno: " +s);
+            
+            //max e min
+
+            var valores=Math.min(1,2,3,4,5,6,7,8);
+
+            document.write("<br>Max: "+valores)
+            
+            /*
+            Contantes
+            var mt =Math.PI;
+            */
+            document.write("<br>Numero aleatório: "+mt);
+        
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

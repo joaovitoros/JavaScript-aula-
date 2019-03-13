@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+
+        <script>
+        
+            var mochila = new Array("Faca", "Corda", 
+            "Pederneira", "Chave", "Lanterna", "Pedra");
+            
+            var num = new Array(5,8,4,9,7,6,3,0,2,1);
+            
+            var numeros;
+           
+            
+            num.sort();//ordena os itens crescente do array 
+            num.reverse();//ordena os itens decrescente do array
+            numeros = num.join();//junta toda a array em uma variavel
+
+            document.write(numeros);
+        
+            
+            mochila=mochila.concat(num);//concatena dois arrays em um só
+            var pos;
+            //indexOf retorna posição de um determinado elemento
+            pos= mochila.indexOf("Pedra");
+
+            if(pos<0){
+                document.write("Item não está na mochila<br>");
+            }else{
+                document.write("Item está na mochila<br>Posição: "+pos)
+            }
+            
+            
+            document.write("Tamanho mochila: " +mochila.length);
+
+            
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
